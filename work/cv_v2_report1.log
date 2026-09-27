@@ -1,0 +1,5 @@
+[stage1] holdout S1=441611 pairs=11461646 candidate recall=0.9763
+[stage1] threshold: best t=0.72 F=0.98152 precision=0.9963 recall=0.9546 singleton_acc=0.9823 nonsing_empty=1676.0000
+   curve: 0.20:0.96950 0.25:0.97247 0.30:0.97474 0.35:0.97644 0.40:0.97788 0.45:0.97896 0.50:0.97982 0.55:0.98046 0.60:0.98091 0.65:0.98129 0.70:0.98145 0.75:0.98150 0.80:0.98136 0.85:0.98094 0.90:0.98007 0.95:0.97766
+[stage1] owner+threshold: best t=0.72 F=0.98170 precision=0.9966 recall=0.9544 singleton_acc=0.9834 nonsing_empty=1688.0000
+[stage1] threshold+top1-fallback: best t=0.74 t_fb=0.7 F=0.98151

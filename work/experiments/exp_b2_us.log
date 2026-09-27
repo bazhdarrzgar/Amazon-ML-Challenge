@@ -1,0 +1,31 @@
+US S1 1323633 pool 6186873 queries 5000 true pairs 17315
+vectorised 89s
+name       query=3.9s est full=17.2min recall@5/10/20/50 {5: 0.4938, 10: 0.6046, 20: 0.6811, 50: 0.747}
+addr       query=0.7s est full=3.2min recall@5/10/20/50 {5: 0.7185, 10: 0.8239, 20: 0.8705, 50: 0.9025}
+comb0.3    query=5.7s est full=25.1min recall@5/10/20/50 {5: 0.8539, 10: 0.9362, 20: 0.958, 50: 0.9742}
+comb0.5    query=5.4s est full=23.7min recall@5/10/20/50 {5: 0.8567, 10: 0.9407, 20: 0.9565, 50: 0.9669}
+reverse channel (all 6186873 pool records, top5) 570s
+reverse top1: recall=0.9613 cand/S1=4.7
+reverse top3: recall=0.9756 cand/S1=14.0
+reverse top5: recall=0.9803 cand/S1=23.1
+union {'comb0.5': 20} rev 0 -> recall, cand/S1 = (0.9565, 20.0)
+union {'comb0.5': 20} rev 3 -> recall, cand/S1 = (0.9813, 25.7)
+union {'comb0.5': 20} rev 5 -> recall, cand/S1 = (0.9833, 32.6)
+union {'comb0.5': 50} rev 0 -> recall, cand/S1 = (0.9669, 50.0)
+union {'comb0.5': 50} rev 3 -> recall, cand/S1 = (0.9841, 54.0)
+union {'comb0.5': 50} rev 5 -> recall, cand/S1 = (0.9854, 58.9)
+union {'comb0.3': 50} rev 0 -> recall, cand/S1 = (0.9742, 50.0)
+union {'comb0.3': 50} rev 3 -> recall, cand/S1 = (0.9845, 55.2)
+union {'comb0.3': 50} rev 5 -> recall, cand/S1 = (0.9861, 61.3)
+union {'name': 10, 'addr': 10, 'comb0.5': 20} rev 0 -> recall, cand/S1 = (0.9735, 26.1)
+union {'name': 10, 'addr': 10, 'comb0.5': 20} rev 3 -> recall, cand/S1 = (0.9835, 31.1)
+union {'name': 10, 'addr': 10, 'comb0.5': 20} rev 5 -> recall, cand/S1 = (0.985, 37.6)
+union {'name': 20, 'addr': 20, 'comb0.5': 30} rev 0 -> recall, cand/S1 = (0.9795, 45.3)
+union {'name': 20, 'addr': 20, 'comb0.5': 30} rev 3 -> recall, cand/S1 = (0.9853, 49.2)
+union {'name': 20, 'addr': 20, 'comb0.5': 30} rev 5 -> recall, cand/S1 = (0.9863, 54.5)
+union {'name': 30, 'addr': 30, 'comb0.5': 50} rev 0 -> recall, cand/S1 = (0.983, 70.7)
+union {'name': 30, 'addr': 30, 'comb0.5': 50} rev 3 -> recall, cand/S1 = (0.9869, 73.9)
+union {'name': 30, 'addr': 30, 'comb0.5': 50} rev 5 -> recall, cand/S1 = (0.9876, 78.2)
+union {'name': 50, 'addr': 50, 'comb0.5': 50, 'comb0.3': 50} rev 0 -> recall, cand/S1 = (0.9856, 98.6)
+union {'name': 50, 'addr': 50, 'comb0.5': 50, 'comb0.3': 50} rev 3 -> recall, cand/S1 = (0.9878, 101.5)
+union {'name': 50, 'addr': 50, 'comb0.5': 50, 'comb0.3': 50} rev 5 -> recall, cand/S1 = (0.9883, 105.3)

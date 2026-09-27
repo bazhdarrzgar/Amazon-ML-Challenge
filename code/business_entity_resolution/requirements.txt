@@ -1,0 +1,14 @@
+# Python 3.9 (tested with CPython 3.9.6 on macOS arm64; any 3.9-3.11 should work)
+# macOS only: LightGBM needs the OpenMP runtime ->  brew install libomp
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+scikit-learn==1.6.1
+lightgbm==4.6.0
+RapidFuzz==3.13.0
+pyarrow==21.0.0
+sparse-dot-topn==1.2.0          # Apache-2.0 (ING Bank) - multi-threaded sparse top-n product
+indic_transliteration==2.3.82   # MIT - rule-based Indic script -> Latin transliteration
+joblib==1.5.3
+threadpoolctl==3.7.0
+tqdm==4.70.1

@@ -1,0 +1,44 @@
+stage1: 11436560 sampled rows, 77 feats (101s)
+  fold model 0: 783 it, es logloss 0.00818 (264s)
+  fold model 1: 694 it, es logloss 0.00825 (231s)
+  fold model 2: 787 it, es logloss 0.00817 (370s)
+  fold model 3: 989 it, es logloss 0.00812 (448s)
+  fold model 4: 822 it, es logloss 0.00812 (407s)
+top gain:
+rev_rank                 0.3799
+ctx_comb_p_rank          0.3375
+num_min_rel_diff         0.0533
+num_b_extra              0.0411
+ctx_comb_p_margin        0.0181
+ctx_comb_q_rank          0.0149
+n_full_ratio             0.0140
+num_a_in_b               0.0140
+a_tset                   0.0127
+n_wcont_b                0.0096
+ctx_comb_p_best_other    0.0080
+legal_equal              0.0055
+a_wcont_b                0.0047
+fwd_rank                 0.0044
+legal_n_b                0.0040
+n_ratio                  0.0040
+n_jw_cmp                 0.0040
+a_wjac                   0.0037
+state_eq                 0.0033
+n_ntok_b                 0.0032
+OOF written: 57285735 pairs (2530s)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "code/business_entity_resolution/src/ber/cv.py", line 271, in <module>
+  File "code/business_entity_resolution/src/ber/cv.py", line 263, in main
+    
+  File "code/business_entity_resolution/src/ber/cv.py", line 159, in stage1
+    hold = oof[oof.fold == HOLDOUT]
+  File "code/business_entity_resolution/src/ber/cv.py", line 169, in report
+    
+  File "code/business_entity_resolution/src/ber/cv.py", line 77, in evaluate
+    out["thr"] = {"t": float(t_best), "macro_f05": f_best, **info}
+TypeError: unsupported format string passed to Series.__format__
+[stage1] holdout S1=441611 pairs=11461646 candidate recall=0.9763

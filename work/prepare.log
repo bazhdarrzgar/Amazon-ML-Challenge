@@ -1,0 +1,7 @@
+dictionaries: name=662 addr=16 (24s)
+normalised train s1: 2206821 rows (23s)
+normalised train s2: 5034616 rows (31s)
+normalised train s3: 5285603 rows (38s)
+normalised test s1: 1732544 rows (11s)
+normalised test s2: 4887273 rows (36s)
+normalised test s3: 5082316 rows (42s)

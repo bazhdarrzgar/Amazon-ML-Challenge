@@ -1,0 +1,7 @@
+{
+ "stage": 2,
+ "policy": "threshold",
+ "threshold": 0.72,
+ "owner": false,
+ "holdout_macro_f05": 0.982825575129842
+}

@@ -1,0 +1,9 @@
+India S1 883188 pool 4133346 queries 5000 true pairs 17515
+name char3 max_df=0.0005                 vocab=   19079 nnz/row=1.0 vec=18s query=0.1s -> est full 0.2 min | recall@5/10/20/50 {5: 0.0886, 10: 0.1214, 20: 0.1519, 50: 0.1961}
+name char3 max_df=0.002                  vocab=   20811 nnz/row=2.8 vec=18s query=0.3s -> est full 1.0 min | recall@5/10/20/50 {5: 0.25, 10: 0.3138, 20: 0.3651, 50: 0.4201}
+name char4 max_df=0.002                  vocab=  222871 nnz/row=6.3 vec=19s query=0.5s -> est full 1.6 min | recall@5/10/20/50 {5: 0.4156, 10: 0.4976, 20: 0.5522, 50: 0.6141}
+name word1-2 max_df=0.01                 vocab=  625427 nnz/row=2.8 vec=13s query=1.5s -> est full 4.5 min | recall@5/10/20/50 {5: 0.4341, 10: 0.5152, 20: 0.5687, 50: 0.6388}
+addr word1-2 max_df=0.0005               vocab= 2826161 nnz/row=8.4 vec=40s query=0.6s -> est full 1.7 min | recall@5/10/20/50 {5: 0.7328, 10: 0.8134, 20: 0.8451, 50: 0.8697}
+addr word1-2 max_df=0.002                vocab= 2828238 nnz/row=10.3 vec=44s query=1.0s -> est full 3.0 min | recall@5/10/20/50 {5: 0.7399, 10: 0.8217, 20: 0.8527, 50: 0.8742}
+addr word1-2 max_df=0.01                 vocab= 2828779 nnz/row=12.5 vec=45s query=5.2s -> est full 15.2 min | recall@5/10/20/50 {5: 0.7448, 10: 0.8272, 20: 0.8576, 50: 0.8816}
+addr char_wb3 max_df=0.002               vocab=   25508 nnz/row=3.0 vec=55s query=0.5s -> est full 1.4 min | recall@5/10/20/50 {5: 0.3956, 10: 0.456, 20: 0.4932, 50: 0.535}

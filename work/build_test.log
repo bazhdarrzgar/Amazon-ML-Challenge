@@ -1,0 +1,37 @@
+== test / France
+  vectorised 259452 S1 x 1434993 pool in 45s
+  forward top20: 5188990 pairs (24s)
+  reverse top3: 4303475 pairs (10s)
+  union: 7467006 pairs, 28.8 per S1
+  context features (69s)
+  word idf matrices (17s)
+  block 0-150000: 3605087 pairs (67s)
+  block 150000-259452: 3861919 pairs (62s)
+  country done in 304s
+== test / India
+  vectorised 809986 S1 x 4717565 pool in 247s
+  forward top20: 16199720 pairs (984s)
+  reverse top3: 14152533 pairs (296s)
+  union: 23244858 pairs, 28.7 per S1
+  context features (177s)
+  word idf matrices (50s)
+  block 0-150000: 3647560 pairs (71s)
+  block 150000-300000: 3709155 pairs (64s)
+  block 300000-450000: 3764355 pairs (65s)
+  block 450000-600000: 3828480 pairs (67s)
+  block 600000-750000: 4346909 pairs (75s)
+  block 750000-809986: 3948399 pairs (63s)
+  country done in 2203s
+== test / US
+  vectorised 663106 S1 x 3817031 pool in 89s
+  forward top20: 13262120 pairs (426s)
+  reverse top3: 11451042 pairs (138s)
+  union: 18214578 pairs, 27.5 per S1
+  context features (86s)
+  word idf matrices (14s)
+  block 0-150000: 3802243 pairs (31s)
+  block 150000-300000: 3853412 pairs (29s)
+  block 300000-450000: 3929561 pairs (29s)
+  block 450000-600000: 4176186 pairs (30s)
+  block 600000-663106: 2453176 pairs (18s)
+  country done in 912s

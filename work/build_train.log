@@ -1,0 +1,31 @@
+== train / India
+  vectorised 883188 S1 x 4133346 pool in 73s
+  forward top20: 17663747 pairs (555s)
+  reverse top3: 12399833 pairs (201s)
+  union: 23351671 pairs, 26.4 per S1
+  context features (93s)
+  word idf matrices (34s)
+  block 0-150000: 3479472 pairs (43s)
+  block 150000-300000: 3511464 pairs (29s)
+  block 300000-450000: 3533133 pairs (29s)
+  block 450000-600000: 3585079 pairs (30s)
+  block 600000-750000: 3646470 pairs (30s)
+  block 750000-883188: 5596053 pairs (44s)
+  country done in 1181s
+== train / US
+  vectorised 1323633 S1 x 6186873 pool in 274s
+  forward top20: 26472660 pairs (1594s)
+  reverse top3: 18560558 pairs (806s)
+  union: 33934064 pairs, 25.6 per S1
+  context features (136s)
+  word idf matrices (19s)
+  block 0-150000: 3552791 pairs (28s)
+  block 150000-300000: 3571157 pairs (28s)
+  block 300000-450000: 3583323 pairs (32s)
+  block 450000-600000: 3618072 pairs (34s)
+  block 600000-750000: 3656345 pairs (30s)
+  block 750000-900000: 3702711 pairs (31s)
+  block 900000-1050000: 3773990 pairs (33s)
+  block 1050000-1200000: 3924511 pairs (34s)
+  block 1200000-1323633: 4551164 pairs (37s)
+  country done in 3148s

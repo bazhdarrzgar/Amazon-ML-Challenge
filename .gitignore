@@ -1,0 +1,35 @@
+# --- Confidential: organizer-provided challenge materials ---
+dataset/
+*.pdf
+/Documentation_template.md
+utils/
+
+# --- Data-derived artifacts (rebuildable via code/business_entity_resolution/run_all.sh) ---
+*.parquet
+*.tsv
+*.csv
+work/cache/
+work/pairs/
+work/cand/
+work/eda/
+work/models/**/*.txt
+output/
+
+# --- Secrets ---
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# --- Local environment ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/

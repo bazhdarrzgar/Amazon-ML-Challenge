@@ -1,0 +1,32 @@
+stage2: train rows 9149979, feats 88 (160s)
+stage2 model: 236 it (234s)
+top gain:
+g_p                      0.5596
+g_c_margin               0.4276
+g_q_gap                  0.0025
+g_q_sum                  0.0009
+g_c_sum_other            0.0006
+g_c_best_other           0.0005
+g_q_max                  0.0005
+state_eq                 0.0004
+ctx_comb_p_margin        0.0003
+n_full_ratio             0.0003
+ctx_comb_q_rank          0.0002
+n_idf_a                  0.0002
+ctx_name_p_margin        0.0002
+ctx_comb_q_max           0.0002
+fwd_rank                 0.0002
+cos_comb                 0.0002
+g_q_rank                 0.0002
+n_idf_inter              0.0002
+amb_pool_name_b          0.0002
+ctx_comb_q_gap           0.0002
+ctx_comb_p_best_other    0.0002
+a_empty_b                0.0002
+ctx_name_p_best_other    0.0002
+g_c_n50                  0.0002
+ctx_addr_q_rank          0.0002
+[stage2] threshold: best t=0.72 F=0.98283 precision=0.9970 recall=0.9572 singleton_acc=0.9907 nonsing_empty=1854.0000
+   curve: 0.20:0.97135 0.25:0.97438 0.30:0.97661 0.35:0.97825 0.40:0.97948 0.45:0.98052 0.50:0.98138 0.55:0.98201 0.60:0.98246 0.65:0.98269 0.70:0.98280 0.75:0.98277 0.80:0.98256 0.85:0.98213 0.90:0.98131 0.95:0.97922
+[stage2] threshold+top1-fallback: best t=0.74 t_fb=0.5 F=0.98299
+decision: {'stage': 2, 'policy': 'threshold', 'threshold': 0.72, 'owner': False, 'holdout_macro_f05': 0.982825575129842}
