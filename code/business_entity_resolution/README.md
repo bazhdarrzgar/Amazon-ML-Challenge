@@ -1,4 +1,12 @@
-# Business Entity Resolution — reproducible pipeline
+# Amazon ML Challenge 2026: Business Entity Resolution
+
+### Project Owners & Authors
+* **SOLOMON BELAY MENGESHA** — *Tezpur University*
+* **BASHDAR RZGAR FATIH** — *Tezpur University*
+
+---
+
+## Business Entity Resolution — Reproducible Pipeline
 
 Blocking + two-stage gradient-boosted matcher for the ML Challenge 2026
 (Source 1 → Source 2/3 entity resolution, macro-F0.5).
