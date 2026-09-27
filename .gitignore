@@ -1,20 +1,61 @@
-# --- Confidential: organizer-provided challenge materials ---
-dataset/
-*.pdf
-utils/
+# ==============================================================================
+# Git Ignore Configuration - Amazon ML Challenge (Team Blacksmith)
+# Prevents large data files, caches, models, secrets, and system debris
+# ==============================================================================
 
-# --- Data-derived artifacts (rebuildable via code/business_entity_resolution/run_all.sh) ---
-*.parquet
+# --- Large Datasets & Tabular / Columnar Files ---
+dataset/
+datasets/
+data/
+output/
+outputs/
 *.tsv
 *.csv
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# --- Intermediate Cache & Working Directories ---
 work/cache/
 work/pairs/
 work/cand/
 work/eda/
-work/models/**/*.txt
-output/
+work/output/
+cache/
+tmp/
+temp/
 
-# --- Secrets ---
+# --- Model Checkpoints & Large Model Dumps ---
+work/models/**/*.txt
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.pkl
+*.pickle
+*.joblib
+*.model
+
+# --- Large Archives & Compressed Files ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.7z
+*.rar
+*.iso
+
+# --- Confidential Organizer Materials ---
+*.pdf
+utils/
+
+# --- Secrets, API Tokens & Credentials ---
 .env
 .env.*
 *.pem
@@ -22,13 +63,29 @@ output/
 credentials*
 secrets*
 
-# --- Local environment ---
+# --- Python Build & Virtual Environments ---
 .venv/
 venv/
+env/
+ENV/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
 .pytest_cache/
+.mypy_cache/
 .ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# --- OS & IDE Metadata ---
 .DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
 .vscode/
 .idea/
+*.swp
+*.swo

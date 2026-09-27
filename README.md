@@ -110,3 +110,34 @@ Unit tests: `python tests/test_metric.py && python tests/test_normalize.py`.
   (train on train, test on test) — no labels are involved.
 * LightGBM seeds are fixed (`seed=42`); `sparse_dot_topn` retrieval is exact (deterministic).
 * Every test S1 id is written exactly once in both output files; empty lists are empty fields.
+
+## 7. Project Structure
+
+```
+Amazon-ML-Challenge/
+├── LICENSE                             # MIT License
+├── README.md                           # Main project documentation
+├── Documentation_template.md           # Official methodology report (Team Blacksmith)
+├── run.sh                              # Root execution script with tqdm tracking
+├── code/
+│   └── business_entity_resolution/
+│       ├── requirements.txt            # Pinned dependencies (with tqdm)
+│       ├── run_all.sh                  # End-to-end execution script
+│       ├── run.sh                      # Shell wrapper
+│       ├── src/ber/                    # Pipeline source code
+│       │   ├── pipeline_runner.py      # Master runner with 6-stage tqdm progress
+│       │   ├── prepare.py              # Normalization & transliteration
+│       │   ├── candidates.py           # Bidirectional TF-IDF blocking
+│       │   ├── features.py             # 88 pairwise & graph features
+│       │   ├── build_pairs.py          # Block-wise feature assembly
+│       │   ├── cv.py                   # 5-fold cross-fitting & Stage-2 reranking
+│       │   └── predict.py              # Test inference & TSV generator
+│       └── tests/                      # Unit test suites
+└── work/                               # Verification logs, configs, and experiments
+```
+
+## 8. License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2026 **SOLOMON BELAY MENGESHA**, **BASHDAR RZGAR FATIH** (Tezpur University).

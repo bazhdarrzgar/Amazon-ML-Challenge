@@ -108,3 +108,9 @@ Unit tests: `python tests/test_metric.py && python tests/test_normalize.py`.
   (train on train, test on test) — no labels are involved.
 * LightGBM seeds are fixed (`seed=42`); `sparse_dot_topn` retrieval is exact (deterministic).
 * Every test S1 id is written exactly once in both output files; empty lists are empty fields.
+
+## 7. License
+
+This project is licensed under the **MIT License** — see the [LICENSE](../../LICENSE) file for details.
+
+Copyright (c) 2026 **SOLOMON BELAY MENGESHA**, **BASHDAR RZGAR FATIH** (Tezpur University).
