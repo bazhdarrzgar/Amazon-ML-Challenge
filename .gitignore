@@ -62,6 +62,11 @@ utils/
 *.key
 credentials*
 secrets*
+infor.md
+info.md
+*infor*.md
+*info*.md
+*token*
 
 # --- Python Build & Virtual Environments ---
 .venv/
