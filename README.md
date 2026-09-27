@@ -115,25 +115,29 @@ Unit tests: `python tests/test_metric.py && python tests/test_normalize.py`.
 
 ```
 Amazon-ML-Challenge/
-├── LICENSE                             # MIT License
+├── LICENSE                             # MIT License (Solomon Belay Mengesha & Bashdar Rzgar Fatih)
 ├── README.md                           # Main project documentation
-├── Documentation_template.md           # Official methodology report (Team Blacksmith)
+├── DOCUMENTATION.md                    # Official methodology report (Team Blacksmith)
+├── Documentation_template.md           # Submission format methodology document
 ├── run.sh                              # Root execution script with tqdm tracking
 ├── code/
 │   └── business_entity_resolution/
 │       ├── requirements.txt            # Pinned dependencies (with tqdm)
-│       ├── run_all.sh                  # End-to-end execution script
+│       ├── run_all.sh                  # Execution script
 │       ├── run.sh                      # Shell wrapper
 │       ├── src/ber/                    # Pipeline source code
 │       │   ├── pipeline_runner.py      # Master runner with 6-stage tqdm progress
-│       │   ├── prepare.py              # Normalization & transliteration
-│       │   ├── candidates.py           # Bidirectional TF-IDF blocking
+│       │   ├── prepare.py              # Normalization & Indic transliteration
+│       │   ├── candidates.py           # Multi-threaded TF-IDF candidate blocking
 │       │   ├── features.py             # 88 pairwise & graph features
 │       │   ├── build_pairs.py          # Block-wise feature assembly
 │       │   ├── cv.py                   # 5-fold cross-fitting & Stage-2 reranking
 │       │   └── predict.py              # Test inference & TSV generator
 │       └── tests/                      # Unit test suites
 └── work/                               # Verification logs, configs, and experiments
+    ├── experiments/                    # Exploratory experiments & blocking benchmarks
+    ├── logs/                           # Stage execution logs (Stage-1, Stage-2, etc.)
+    └── models/                         # Transliteration dicts & model evaluation JSONs
 ```
 
 ## 8. License
