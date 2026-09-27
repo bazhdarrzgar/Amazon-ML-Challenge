@@ -1,7 +1,7 @@
 # ML Challenge 2026: Business Entity Resolution Solution Template
 
 **Team Name:** [Your Team Name]
-**Team Members:** [List all team members]
+**Team Members:** Solomon Belay Mengesha, Bashdar Rzgar Fatih (Tezpur University)
 **Submission Date:** [Date]
 
 ---
