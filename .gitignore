@@ -1,7 +1,6 @@
 # --- Confidential: organizer-provided challenge materials ---
 dataset/
 *.pdf
-/Documentation_template.md
 utils/
 
 # --- Data-derived artifacts (rebuildable via code/business_entity_resolution/run_all.sh) ---

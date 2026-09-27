@@ -1,6 +1,7 @@
 # Amazon ML Challenge 2026: Business Entity Resolution
 
-### Project Owners & Authors
+### Team: Blacksmith
+**Project Owners & Authors:**
 * **SOLOMON BELAY MENGESHA** — *Tezpur University*
 * **BASHDAR RZGAR FATIH** — *Tezpur University*
 
